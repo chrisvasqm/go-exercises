@@ -2,20 +2,20 @@ package exercises
 
 import "fmt"
 
-type Lightbulb struct {
+type LightBulb struct {
 	isOn bool
 }
 
-func (lightbulb *Lightbulb) TurnOn() {
+func (lightbulb *LightBulb) TurnOn() {
 	lightbulb.isOn = true
 	fmt.Println("Lightbulb is ON")
 }
 
-func (lightbulb *Lightbulb) TurnOff() {
+func (lightbulb *LightBulb) TurnOff() {
 	lightbulb.isOn = false
 	fmt.Println("Lightbulb is OFF")
 }
 
-func (lightbulb *Lightbulb) IsOn() bool {
+func (lightbulb *LightBulb) IsOn() bool {
 	return lightbulb.isOn
 }
