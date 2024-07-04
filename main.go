@@ -14,4 +14,10 @@ func main() {
 	for i := 1; i <= 20; i++ {
 		fmt.Println(exercises.FizzBuzz(i))
 	}
+
+	lightbulb := exercises.Lightbulb{}
+	fmt.Println(lightbulb.IsOn())
+	lightbulb.TurnOn()
+	lightbulb.TurnOff()
+	fmt.Println(lightbulb.IsOn())
 }	
